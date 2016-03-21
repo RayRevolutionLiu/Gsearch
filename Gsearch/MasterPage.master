@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>數位資源查詢系統</title>
+<link href="css/myITRIproject/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+<link href="css/superfish.css" rel="stylesheet" type="text/css" /><!-- 下拉選單 -->
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/GenStyle.css" rel="stylesheet" type="text/css" /><!-- UIcolor style -->
+<link href="css/multiple-select.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src='<% =ResolveUrl("~/js/jquery-1.11.2.min.js") %>'></script>
+<script type="text/javascript" src='<% =ResolveUrl("~/js/superfish.min.js") %>'></script><!-- 下拉選單 -->
+<script type="text/javascript" src='<% =ResolveUrl("~/js/jquery.colorbox.js") %>'></script>
+<!-- tweenmax -->
+<script type="text/javascript" src='<% =ResolveUrl("~/js/TweenMax.min.js") %>'></script>
+<script type="text/javascript" src='<% =ResolveUrl("~/js/jquery-ui-1.10.2.custom.min.js") %>'></script>
+
+<script src='<% =ResolveUrl("~/js/jquery.multiple.select.js") %>'></script>
+<script type="text/javascript" src='<% =ResolveUrl("~/js/GenCommon.js") %>'></script><!-- UIcolor JS -->
+<script type="text/javascript" src='<% =ResolveUrl("~/js/PageCommon.js") %>'></script><!-- 系統共用 JS -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="WrapperBody">
+        <div class="WrapperHeader">
+            <div id="logowrapper" class="padding10TB">
+                <div id="doc">
+                    <img src="images/doc.jpg" /></div>
+                <div id="word">
+                    <img src="images/wordA.png" /></div>
+                <div id="lens">
+                    <img src="images/lens.png" /></div>
+                <div id="logo">
+                    <img src="images/logo.gif" /></div>
+            </div>
+        </div>
+        <!-- WrapperHeader -->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="WrapperFooter">
+            <div class="footerblock lineheight02">
+                版權所有© 2015 工業技術研究院｜限院內同仁公務使用禁止對外公開｜<br />
+                業務窗口：資科中心｜網站設計製作：資科中心｜意見反應｜改版訊息
+            </div>
+            <!--{* footerblock *}-->
+        </div>
+    </div>
+    </form>
+
+
+    <script type="text/javascript">
+
+        //GSAP
+        var wordA = $("#word");
+        var lens = $("#lens");
+        TweenLite.set([wordA, lens], { scale: 0.9 });
+        var timeall = new TimelineMax({ repeat: -1, repeatDelay: 5 });
+        timeall.from(lens, 1.5, { rotation: -30, transformOrigin: "0% 100%", ease: Power0.easeNone, })
+                 .to(lens, 1.5, { scale: 1, transformOrigin: "0% 100%", })
+                 .to(wordA, 1.5, { scale: 1.1, transformOrigin: "50% 50%", delay: -1.5 })//為了與放大鏡同步,需設定負值的delay
+                 .to(lens, 1.5, { scale: 0.9, transformOrigin: "0% 100%", delay: 1 })
+                 .to(wordA, 1.5, { scale: 0.9, transformOrigin: "50% 50%", delay: -1.5 })//為了與放大鏡同步,需設定負值的delay
+                 .to(lens, 1.5, { rotation: -30, transformOrigin: "0% 100%", ease: Power0.easeNone, })
+
+        ;
+        /*
+        TweenLite.set([wordA,lens],{scale:0.8});
+        var act1 = TweenLite.from(lens,1.2,{x:-20,y:-10});
+        var act2 = TweenLite.to(lens,1.5,{scale:1.2});
+        var act3 = TweenLite.to(word,1.5,{scale:1.2});
+        */
+
+        //<![CDATA[
+        $(window).load(function () { // makes sure the whole site is loaded
+            TweenLite.set($("#advancesearch,#searchoutcome"), { display: "none", opacity: 0 });
+            //$(".searchbtn").click(function () {
+            //    var act1 = TweenLite.to($("#searchoutcome"), 0.8, { display: "block", opacity: 1, y: 10 });
+            //});
+        })
+        //]]>
+</script>
+
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                showButtonPanel: true,
+                autoSize: true,
+                changeYear: true,
+                changeMonth: true,
+                dateFormat: 'yy/mm/dd',
+                dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                nextText: "下一月",
+                prevText: "上一月",
+                closeText: "關閉",
+                currentText: "今天"
+            });
+
+            $("select[multiple='multiple']").multipleSelect({
+                width: 770,
+                multiple: true,
+                multipleWidth: 120,
+                placeholder: "可複選或全選"
+            });
+
+            $(".dialog").dialog({
+                modal: true,
+                position: ["center", 100],
+                autoOpen: false,
+                closeOnEscape: false, //讓Esc可以關掉視窗
+                draggable: false, //可拖動 
+                resizable: false,
+                show: {
+                    duration: 300
+                },
+                hide: {
+                    duration: 300
+                },
+                open: function (event, ui) {
+                    $('.dialog').css('overflow', 'hidden'); //把scrollbar隱藏要把auto改成hidden
+                    $(".ui-dialog-titlebar").hide(); //把上面的整個隱藏起來
+                }
+            });
+        });
+</script>
+</body>
+</html>

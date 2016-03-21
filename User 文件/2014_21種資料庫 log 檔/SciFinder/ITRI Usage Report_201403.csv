@@ -1,0 +1,140 @@
+BILL-TO NUMBER,BILL-TO NAME,PERIOD,LOGINID,CITY,COST CENTER,USER NAME,USER FIRST NAME,USAGE TYPE,GROSS CHARGES,ADJUSTED CHARGES,CURRENCY,SCIFINDER PLATFORM,USAGE DESCRIPTION,USAGE QUANTITY
+398844,iGroup Asia Pacific Ltd,201403,CHANG950524,Hsin-chu,,Chang,Fang-Ching,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,CHANGA10072,Hsin-chu,,Chang,Yu-Fang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,CHANGA10359,Hsin-chu,,Chang,Shu-Nung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,37
+398844,iGroup Asia Pacific Ltd,201403,CHANGA10361,Hsin-chu,,Chang,Cha-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,2
+398844,iGroup Asia Pacific Ltd,201403,CHANGA10361,Hsin-chu,,Chang,Cha-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Author Name Web,1
+398844,iGroup Asia Pacific Ltd,201403,CHAO950649,Hsin-chu,,Chao,Teng-Chih,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,2
+398844,iGroup Asia Pacific Ltd,201403,CHAO950649,Hsin-chu,,Chao,Teng-Chih,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,CHEN451479,Hsin-chu,,Chen,Pei-Chin,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,CHEN750103,Hsin-chu,,Chen,Chih-Hung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,8
+398844,iGroup Asia Pacific Ltd,201403,CHEN750103,Hsin-chu,,Chen,Chih-Hung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structure Similarity,5
+398844,iGroup Asia Pacific Ltd,201403,CHEN750103,Hsin-chu,,Chen,Chih-Hung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,7
+398844,iGroup Asia Pacific Ltd,201403,CHENA20117,Hsin-chu,,Chen,Po-Ju,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,CHENG950330,Hsin-chu,,Cheng,chien hsien,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,22
+398844,iGroup Asia Pacific Ltd,201403,CHENG950330,Hsin-chu,,Cheng,chien hsien,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,CHOU940132,Hsin-chu,,Chou,Tsung-Yi,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,5
+398844,iGroup Asia Pacific Ltd,201403,CHUA10339,Hsin-chu,,Chu,Yu-Lin,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,10
+398844,iGroup Asia Pacific Ltd,201403,FAN940123,Hsin-chu,,Fan,Cheng-Hsing,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,4
+398844,iGroup Asia Pacific Ltd,201403,FAN940123,Hsin-chu,,Fan,Cheng-Hsing,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,HOUA20324,Hsin-chu,,Hou,Yen-Yu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,8
+398844,iGroup Asia Pacific Ltd,201403,HSIANG990261,Hsin-chu,,Hsiang,Shou-Jui,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,11
+398844,iGroup Asia Pacific Ltd,201403,HSIEH960439,Hsin-chu,,Hsieh,Hsin-Ju,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,HSIEH980198,Hsin-chu,,Hsieh,Cheng-Han,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,23
+398844,iGroup Asia Pacific Ltd,201403,HSIEH980198,Hsin-chu,,Hsieh,Cheng-Han,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,2
+398844,iGroup Asia Pacific Ltd,201403,HUANG950654,Hsin-chu,,Huang,Kumg-Hsun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,1
+398844,iGroup Asia Pacific Ltd,201403,HUANG980005,Hsin-chu,,Huang,Jui-wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,HUANG980005,Hsin-chu,,Huang,Jui-wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,HUANG990024,Hsin-chu,,Huang,Yao-Ting,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,5
+398844,iGroup Asia Pacific Ltd,201403,HUANG990024,Hsin-chu,,Huang,Yao-Ting,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,1
+398844,iGroup Asia Pacific Ltd,201403,HUANG990024,Hsin-chu,,Huang,Yao-Ting,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,2
+398844,iGroup Asia Pacific Ltd,201403,HUANG990024,Hsin-chu,,Huang,Yao-Ting,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,2
+398844,iGroup Asia Pacific Ltd,201403,HUNG850169,Hsin-chu,,Hung,Chi-Y,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,47
+398844,iGroup Asia Pacific Ltd,201403,HUNG850169,Hsin-chu,,Hung,Chi-Y,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,3
+398844,iGroup Asia Pacific Ltd,201403,HUNG850169,Hsin-chu,,Hung,Chi-Y,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Company Name Web,1
+398844,iGroup Asia Pacific Ltd,201403,HUNG850169,Hsin-chu,,Hung,Chi-Y,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,JUIA10044,Hsin-chu,,Jui,Chia-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,6
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,28
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,10
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,14
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,1
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Molecular Formula,3
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,3
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Reactions - Get Reactions Web,12
+398844,iGroup Asia Pacific Ltd,201403,LEE900001,Hsin-chu,,Lee,On,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,45
+398844,iGroup Asia Pacific Ltd,201403,LEEA20207,Hsin-chu,,Lee,Hsuan-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,7
+398844,iGroup Asia Pacific Ltd,201403,LEEA20207,Hsin-chu,,Lee,Hsuan-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,8
+398844,iGroup Asia Pacific Ltd,201403,LEEA20207,Hsin-chu,,Lee,Hsuan-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Author Name Web,2
+398844,iGroup Asia Pacific Ltd,201403,LEEA20207,Hsin-chu,,Lee,Hsuan-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,22
+398844,iGroup Asia Pacific Ltd,201403,LEEA20207,Hsin-chu,,Lee,Hsuan-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure-Markush - Web,1
+398844,iGroup Asia Pacific Ltd,201403,LI900570,Hsin-chu,,Li,Li-Lan,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,6
+398844,iGroup Asia Pacific Ltd,201403,LIA20313,Hsin-chu,,Li,Jheng-Sian,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,4
+398844,iGroup Asia Pacific Ltd,201403,LIA20313,Hsin-chu,,Li,Jheng-Sian,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structure Similarity,1
+398844,iGroup Asia Pacific Ltd,201403,LIA20313,Hsin-chu,,Li,Jheng-Sian,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,6
+398844,iGroup Asia Pacific Ltd,201403,LIA20313,Hsin-chu,,Li,Jheng-Sian,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Company Name Web,1
+398844,iGroup Asia Pacific Ltd,201403,LIA20313,Hsin-chu,,Li,Jheng-Sian,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Substances Web,1
+398844,iGroup Asia Pacific Ltd,201403,LIAO940570,Hsin-chu,,Liao,Sheng-Ju,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,LIAO980104,Hsin-chu,,Liao,Chun-Hsiung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,LIAWA00356,Hsin-chu,,Liaw,Chao-Wu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,42
+398844,iGroup Asia Pacific Ltd,201403,LIAWA00356,Hsin-chu,,Liaw,Chao-Wu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Reactions - Get Reactions Web,3
+398844,iGroup Asia Pacific Ltd,201403,LIAWA00356,Hsin-chu,,Liaw,Chao-Wu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,2
+398844,iGroup Asia Pacific Ltd,201403,LIN770899,Hsin-chu,,Lin,Chiu-Hsing,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,3
+398844,iGroup Asia Pacific Ltd,201403,LIN770899,Hsin-chu,,Lin,Chiu-Hsing,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,2
+398844,iGroup Asia Pacific Ltd,201403,LIN870786,Hsin-chu,,Lin,Mei-Ru,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,LIN950048,Hsin-chu,,Lin,Sheng Lin,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,6
+398844,iGroup Asia Pacific Ltd,201403,LIN980196,Hsin-chu,,Lin,Jian-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,2
+398844,iGroup Asia Pacific Ltd,201403,LIN980196,Hsin-chu,,Lin,Jian-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,2
+398844,iGroup Asia Pacific Ltd,201403,LINA10270,Hsin-chu,,Lin,Wang-Chung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,5
+398844,iGroup Asia Pacific Ltd,201403,LINA10270,Hsin-chu,,Lin,Wang-Chung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,3
+398844,iGroup Asia Pacific Ltd,201403,LINA10270,Hsin-chu,,Lin,Wang-Chung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,LINA10270,Hsin-chu,,Lin,Wang-Chung,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,LIOU000143,Hsin-chu,,liou,jia-Lun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,2
+398844,iGroup Asia Pacific Ltd,201403,LIU528177,Hsin-chu,,Liu,Wanchun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,4
+398844,iGroup Asia Pacific Ltd,201403,LIU528177,Hsin-chu,,Liu,Wanchun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,1
+398844,iGroup Asia Pacific Ltd,201403,LIUA00600,Hsin-chu,,Liu,Ken-Yen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,1
+398844,iGroup Asia Pacific Ltd,201403,LIUA00600,Hsin-chu,,Liu,Ken-Yen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,2
+398844,iGroup Asia Pacific Ltd,201403,LIUA00600,Hsin-chu,,Liu,Ken-Yen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,LO850446,Hsin-chu,,Lo,Chao-Chun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Keep-Me-Posted Weekly Web,20
+398844,iGroup Asia Pacific Ltd,201403,OU910517,Hsin-chu,,Ou,Chun Yao,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,4
+398844,iGroup Asia Pacific Ltd,201403,OU910517,Hsin-chu,,Ou,Chun Yao,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Substances Web,1
+398844,iGroup Asia Pacific Ltd,201403,OU910517,Hsin-chu,,Ou,Chun Yao,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,SCIJB2378,Hsin-chu,,Kung,Yu-Ruei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,SCISN1281,Hsin-chu,,Wei,Swallow,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly,3
+398844,iGroup Asia Pacific Ltd,201403,SFGMW137,Hsin-chu,,Yeh,Cheng-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,4
+398844,iGroup Asia Pacific Ltd,201403,SFGMW137,Hsin-chu,,Yeh,Cheng-Wei,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,3
+398844,iGroup Asia Pacific Ltd,201403,SFGMW138,Hsin-chu,,Huang,Pei-Chen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly,5
+398844,iGroup Asia Pacific Ltd,201403,SFGMW138,Hsin-chu,,Huang,Pei-Chen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,10
+398844,iGroup Asia Pacific Ltd,201403,SFGMW139,Hsin-chu,,Tsai,Yung-Yu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,40
+398844,iGroup Asia Pacific Ltd,201403,SFGMW139,Hsin-chu,,Tsai,Yung-Yu,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGMW141,Hsin-chu,,Tsai,Hui-Ping,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,1
+398844,iGroup Asia Pacific Ltd,201403,SFGMW141,Hsin-chu,,Tsai,Hui-Ping,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,5
+398844,iGroup Asia Pacific Ltd,201403,SFGMW141,Hsin-chu,,Tsai,Hui-Ping,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,SFGSS354,Hsin-chu,,Lin,Yung-Chan,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,10
+398844,iGroup Asia Pacific Ltd,201403,SFGSS356,Hsin-chu,,Chen,Mei-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly,4
+398844,iGroup Asia Pacific Ltd,201403,SFGSS356,Hsin-chu,,Chen,Mei-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS356,Hsin-chu,,Chen,Mei-Wen,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Monthly by Exact Structur,1
+398844,iGroup Asia Pacific Ltd,201403,SFGSS360,Hsin-chu,,Teng,Dr Kelly,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,SFGSS360,Hsin-chu,,Teng,Dr Kelly,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Journal Web,3
+398844,iGroup Asia Pacific Ltd,201403,SFGSS362,Hsin-chu,,Lo,Sandra,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS366,Hsin-chu,,Lee,Lain-Tze,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS366,Hsin-chu,,Lee,Lain-Tze,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS366,Hsin-chu,,Lee,Lain-Tze,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS370,Hsin-chu,,Chin,Gino,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,3
+398844,iGroup Asia Pacific Ltd,201403,SFGSS370,Hsin-chu,,Chin,Gino,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,45
+398844,iGroup Asia Pacific Ltd,201403,SFGSS370,Hsin-chu,,Chin,Gino,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,20
+398844,iGroup Asia Pacific Ltd,201403,SFGSS370,Hsin-chu,,Chin,Gino,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,2
+398844,iGroup Asia Pacific Ltd,201403,SFGSS370,Hsin-chu,,Chin,Gino,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,SFGSS385,Hsin-chu,,Yang,Wei-Ta,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,10
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,1
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Locate by Substance ID,2
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Substructure,15
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,2
+398844,iGroup Asia Pacific Ltd,201403,SFGSS400,Hsin-chu,,Jenn-Tsang,Hwang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,3
+398844,iGroup Asia Pacific Ltd,201403,SFGSS403,Hsin-chu,,Long,Yean-San,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Client,Keep-Me-Posted Weekly by Exact Structure,5
+398844,iGroup Asia Pacific Ltd,201403,SHEN980073,Hsin-chu,,Shen,Roi,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,1
+398844,iGroup Asia Pacific Ltd,201403,SHEN980073,Hsin-chu,,Shen,Roi,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,11
+398844,iGroup Asia Pacific Ltd,201403,SHEN980073,Hsin-chu,,Shen,Roi,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Patent Web,1
+398844,iGroup Asia Pacific Ltd,201403,SU940466,Hsin-chu,,Su,Ting-Yao,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,2
+398844,iGroup Asia Pacific Ltd,201403,TINGA10329,Hsin-chu,,Ting,Chun-Ming,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,TSAI450946,Hsin-chu,,Tsai,i-Hsuan,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,3
+398844,iGroup Asia Pacific Ltd,201403,TSENGA00454,Hsin-chu,,Tseng,Chih-Hao Tseng,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,1
+398844,iGroup Asia Pacific Ltd,201403,TSENGA00454,Hsin-chu,,Tseng,Chih-Hao Tseng,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,1
+398844,iGroup Asia Pacific Ltd,201403,TSENGA00454,Hsin-chu,,Tseng,Chih-Hao Tseng,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,5
+398844,iGroup Asia Pacific Ltd,201403,TSENGA00454,Hsin-chu,,Tseng,Chih-Hao Tseng,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,TSENGA00454,Hsin-chu,,Tseng,Chih-Hao Tseng,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,5
+398844,iGroup Asia Pacific Ltd,201403,WANG409520,Hsin-chu,,Wang,Chia-Chun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,3
+398844,iGroup Asia Pacific Ltd,201403,WANG409520,Hsin-chu,,Wang,Chia-Chun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,1
+398844,iGroup Asia Pacific Ltd,201403,WANG409520,Hsin-chu,,Wang,Chia-Chun,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,References - Get Substances Web,1
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structures,8
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,27
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Substructure,4
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,1
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Structure Similarity,3
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Reactions - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,WANG970550,Hsin-chu,,Wang,Kuo-Chang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Substances - Get Reactions Web,1
+398844,iGroup Asia Pacific Ltd,201403,WANGA00177,Hsin-chu,,Wang,Yi-Rong,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,2
+398844,iGroup Asia Pacific Ltd,201403,WANGA00177,Hsin-chu,,Wang,Yi-Rong,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore by Research Topic Web,4
+398844,iGroup Asia Pacific Ltd,201403,WEN920454,Hsin-chu,,Wen,Yen-Fang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,2
+398844,iGroup Asia Pacific Ltd,201403,YEH940398,Hsin-chu,,Yeh,Kuo-Liang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Explore Reactions,6
+398844,iGroup Asia Pacific Ltd,201403,YEH940398,Hsin-chu,,Yeh,Kuo-Liang,SCIFINDER GOVERNMENT,0.00,0.00,USD,SciFinder Web,Closed Reaction Search,2
