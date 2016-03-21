@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>數位資源查詢系統</title>
+<link href="css/superfish.css" rel="stylesheet" type="text/css" /><!-- 下拉選單 -->
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/GenStyle.css" rel="stylesheet" type="text/css" /><!-- UIcolor style -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/superfish.min.js"></script><!-- 下拉選單 -->
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<!-- tweenmax -->
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+</head>
+<body>
+<div class="WrapperBody">
+  
+  <div class="WrapperHeader">
+     <div id="logowrapper" class="padding10TB">
+    	<div id="doc"><img src="images/doc.jpg" /></div>
+        <div id="word"><img src="images/wordA.png" /></div>
+        <div id="lens"><img src="images/lens.png" /></div>
+        <div id="logo"><img src="images/logo.gif" /></div>
+     </div>
+  </div><!-- WrapperHeader --> 
+    
+    <!-- tabmenu -->
+ <div class="tabmenuT2block">
+    <div class="fixwidth twocol">
+    	<div class="textcenter"><!-- 選單位置:left:置左、right:置右、center:置中 -->
+        	<span class="tabmenuT2Btn"><a href="index.html" target="_self">年度報表</a></span>
+            <span class="tabmenuT2Btn"><a href="page-search.html" target="_self">查詢條件</a></span>
+            <span class="tabmenuT2Btn  tabmenuT2BtnCurrent"><a href="page-upload.html" target="_self">上傳檔案</a></span>
+        </div><!-- left -->
+    </div><!-- twocol -->
+</div><!-- tabmenuT2block -->    
+    <!-- tabmenu -->
+
+    	<div class="fixwidth margin10TB gentable">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="12%" align="right"><div class="titlebackicon">ACM</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">SciFinder</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">ACS</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">SDOL</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">ASTM</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">SPIE</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">Digitimes</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">SCOPUS</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">EV</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">TI</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">Goldfire</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">Wiley</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">IEEE</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">工程</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">JCR</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">天下</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">Nature</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">萬方</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">OUP</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+    <th align="right"><div class="titlebackicon">聯合知識庫</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">Science</div></th>
+    <td><a class="genbtnS">選擇檔案</a> <input type="text" class="inputex" /> <a class="genbtnS">上傳</a></td>
+  </tr>
+</table>
+</div>
+
+</div><!-- WrapperBody -->
+
+<div class="WrapperFooter">
+	<div class="footerblock lineheight02">
+版權所有© 2015 工業技術研究院｜限院內同仁公務使用禁止對外公開｜<br />
+業務窗口：資科中心｜網站設計製作：資科中心｜意見反應｜改版訊息
+	</div><!--{* footerblock *}-->
+</div><!-- WrapperFooter -->
+
+<!-- logo 動畫 -->
+<script type="text/javascript">
+	//GSAP
+	var wordA = $("#word");
+	var lens = $("#lens");
+	TweenLite.set([wordA,lens],{scale:0.9});
+	var timeall = new TimelineMax({repeat:-1, repeatDelay:5});
+	timeall.from(lens,1.5,{rotation:-30,transformOrigin:"0% 100%",ease:Power0.easeNone,})
+		     .to(lens,1.5,{scale:1,transformOrigin:"0% 100%",})
+			 .to(wordA,1.5,{scale:1.1,transformOrigin:"50% 50%", delay:-1.5})//為了與放大鏡同步,需設定負值的delay
+			 .to(lens,1.5,{scale:0.9,transformOrigin:"0% 100%",delay:1})
+			 .to(wordA,1.5,{scale:0.9,transformOrigin:"50% 50%",delay:-1.5})//為了與放大鏡同步,需設定負值的delay
+			 .to(lens,1.5,{rotation:-30,transformOrigin:"0% 100%",ease:Power0.easeNone,})
+			 
+	;
+	/*
+	TweenLite.set([wordA,lens],{scale:0.8});
+	var act1 = TweenLite.from(lens,1.2,{x:-20,y:-10});
+	var act2 = TweenLite.to(lens,1.5,{scale:1.2});
+	var act3 = TweenLite.to(word,1.5,{scale:1.2});
+	*/
+</script>
+
+<script type="text/javascript" src="js/GenCommon.js"></script><!-- UIcolor JS -->
+<script type="text/javascript" src="js/PageCommon.js"></script><!-- 系統共用 JS -->
+</body>
+</html>

@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>數位資源查詢系統</title>
+<link href="css/myITRIproject/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+<link href="css/superfish.css" rel="stylesheet" type="text/css" /><!-- 下拉選單 -->
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/GenStyle.css" rel="stylesheet" type="text/css" /><!-- UIcolor style -->
+<link href="css/multiple-select.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/superfish.min.js"></script><!-- 下拉選單 -->
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<!-- tweenmax -->
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+</head>
+<body>
+<div class="WrapperBody">
+  
+  <div class="WrapperHeader">
+     <div id="logowrapper" class="padding10TB">
+    	<div id="doc"><img src="images/doc.jpg" /></div>
+        <div id="word"><img src="images/wordA.png" /></div>
+        <div id="lens"><img src="images/lens.png" /></div>
+        <div id="logo"><img src="images/logo.gif" /></div>
+     </div>
+  </div><!-- WrapperHeader -->  
+    
+    <!-- tabmenu -->
+ <div class="tabmenuT2block">
+    <div class="fixwidth twocol">
+    	<div class="textcenter"><!-- 選單位置:left:置左、right:置右、center:置中 -->
+        	<span class="tabmenuT2Btn"><a href="index.html" target="_self">年度報表</a></span>
+            <span class="tabmenuT2Btn  tabmenuT2BtnCurrent"><a href="page-search.html" target="_self">查詢條件</a></span>
+            <span class="tabmenuT2Btn"><a href="page-upload.html" target="_self">上傳檔案</a></span>
+        </div><!-- left -->
+    </div><!-- twocol -->
+</div><!-- tabmenuT2block -->    
+    <!-- tabmenu -->
+    
+    <div class="fixwidth">
+	<div class="gentable font-size3 margin10T">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="18%"align="right"><div class="titlebackicon">資料庫名稱</div></th>
+    <td width="82%" class="width85" colspan="3"><select multiple="multiple">
+      <option value="1">ACM</option>
+      <option value="2">ACS</option>
+      <option value="3">ASTM</option>
+      <option value="4">Digitimes</option>
+      <option value="5">EV</option>
+      <option value="6">Goldfire</option>
+      <option value="7">IEEE</option>
+      <option value="8">JCR</option>
+      <option value="9">Nature</option>
+      <option value="10">OUP</option>
+      <option value="11">Science</option>
+      <option value="12">SciFinder</option>
+      <option value="13">SDOL</option>
+      <option value="14">SPIE</option>
+      <option value="15">SCOPUS</option>
+      <option value="16">TI</option>
+      <option value="17">Wiley</option>
+      <option value="18">工程</option>
+      <option value="19">天下</option>
+      <option value="20">萬方</option>
+      <option value="21">聯合知識庫</option>
+    </select></td>
+    </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">單位</div></th>
+    <td colspan="3"><select multiple="multiple">
+      <option value="1">01院部</option>
+      <option value="2">07量測</option>
+      <option value="3">14行政</option>
+      <option value="4">17資科</option>
+      <option value="5">20產經</option>
+      <option value="6">21會計</option>
+      <option value="7">23學院</option>
+      <option value="8">27南分院</option>
+      <option value="9">28技轉</option>
+      <option value="10">29國際</option>
+      <option value="11">30產服</option>
+      <option value="12">32競爭力</option>
+      <option value="13">51電光</option>
+      <option value="14">52資通</option>
+      <option value="15">53機械</option>
+      <option value="16">54材化</option>
+      <option value="17">55綠能</option>
+      <option value="18">56生醫</option>
+      <option value="19">57中分院</option>
+      <option value="20">61顯示</option>
+      <option value="21">65服科</option>
+      <option value="22">67巨資</option>
+      <option value="23">68工具機</option>
+    </select></td>
+    </tr>
+  <tr>
+    <th width="18%" align="right"><div class="titlebackicon">Journal Title<br />
+        (刊名/篇名)</div></th>
+    <td width="32%"><input type="text" class="inputex width90" /></td>
+    <th width="18%" align="right"><div class="titlebackicon">ISSN</div></th>
+    <td width="32%"><input type="text" class="inputex width90" /></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">部門名稱</div></th>
+    <td><input type="text" class="inputex width90" /></td>
+    <th align="right"><div class="titlebackicon">部門代碼</div></th>
+    <td><input type="text" class="inputex width90" /></td>
+  </tr>
+  <tr>
+    <th align="right"><div class="titlebackicon">姓名</div></th>
+    <td><input type="text" class="inputex width90" /></td>
+    <th align="right"><div class="titlebackicon">工號</div></th>
+    <td><input type="text" class="inputex width90" /></td>
+  </tr>
+    <tr>
+    <th align="right"><div class="titlebackicon">期間</div></th>
+    <td colspan="2"><input type="text" class="inputex datepicker"/> ~ <input type="text" class="inputex datepicker"/></td>
+    <td align="right"><span style="margin-right:22px;"><a href="#" class="genbtn searchbtn">查詢</a></span></td>
+    </tr>
+</table>
+</div>
+
+</div>
+
+<div id="searchoutcome">
+<div class="twocol margin15TB padding5RL">
+<div class="left"><h3>搜尋結果</h3></div>
+<div class="right" ><a href="#" class="genbtnS searchbtn" >匯出CSV</a></div>
+</div>
+<div class="stripeMe" style="padding:0 5px;">
+<table width="100%">
+  <tr>
+    <th>資料庫名稱</th>
+    <th>日期</th>
+    <th>單位</th>
+    <th>部門名稱</th>
+    <th>部門代碼</th>
+    <th>姓名</th>
+    <th>工號</th>
+    <th>電話/專線</th>
+    <th>瀏覽次數</th>
+    <th>下載次數</th>
+    <th>登入次數</th>
+    <th>檢索次數</th>
+    <th>信箱</th>
+    <th>帳號</th>
+    <th>刊名</th>
+    <th>篇名</th>
+  </tr>
+  <tr>
+    <td>Digitimes</td>
+    <td>2015/09/28</td>
+    <td>17資科</td>
+    <td>網際網路應用系統整合二部</td>
+    <td>SF200</td>
+    <td>詹將佑</td>
+    <td>529130</td>
+    <td>5318124</td>
+    <td>12</td>
+    <td>&nbsp;</td>
+    <td>33&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>529130@itri.org.tw</td>
+    <td>Tzeng,jin-jang <br />(j.j.tzeng@itri.org.tw)</td>
+    <td>Weimar publics/Weimar 
+        <br />
+        subjects</td>
+    <td>rethinking the political culture of 
+        <br />
+        Germany in the 1920s</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+</div><!-- searchoutcome -->
+
+</div><!-- WrapperBody -->
+
+<div class="WrapperFooter">
+	<div class="footerblock lineheight02">
+版權所有© 2015 工業技術研究院｜限院內同仁公務使用禁止對外公開｜<br />
+業務窗口：資科中心｜網站設計製作：資科中心｜意見反應｜改版訊息
+	</div><!--{* footerblock *}-->
+</div><!-- WrapperFooter -->
+
+<!-- 本頁面使用的JS -->
+<script type="text/javascript">
+	
+	//GSAP
+	var wordA = $("#word");
+	var lens = $("#lens");
+	TweenLite.set([wordA,lens],{scale:0.9});
+	var timeall = new TimelineMax({repeat:-1, repeatDelay:5});
+	timeall.from(lens,1.5,{rotation:-30,transformOrigin:"0% 100%",ease:Power0.easeNone,})
+		     .to(lens,1.5,{scale:1,transformOrigin:"0% 100%",})
+			 .to(wordA,1.5,{scale:1.1,transformOrigin:"50% 50%", delay:-1.5})//為了與放大鏡同步,需設定負值的delay
+			 .to(lens,1.5,{scale:0.9,transformOrigin:"0% 100%",delay:1})
+			 .to(wordA,1.5,{scale:0.9,transformOrigin:"50% 50%",delay:-1.5})//為了與放大鏡同步,需設定負值的delay
+			 .to(lens,1.5,{rotation:-30,transformOrigin:"0% 100%",ease:Power0.easeNone,})
+			 
+	;
+	/*
+	TweenLite.set([wordA,lens],{scale:0.8});
+	var act1 = TweenLite.from(lens,1.2,{x:-20,y:-10});
+	var act2 = TweenLite.to(lens,1.5,{scale:1.2});
+	var act3 = TweenLite.to(word,1.5,{scale:1.2});
+	*/
+
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+				TweenLite.set($("#advancesearch,#searchoutcome"),{display:"none",opacity:0});			
+				$(".searchbtn").click(function(){
+				var act1 = TweenLite.to($("#searchoutcome"),0.8,{display:"block",opacity:1,y:10});
+				});
+})
+	//]]>
+</script>
+
+<!-- 複選選單 -->
+<script src="js/jquery.multiple.select.js"></script>
+<script>
+    $(function() {
+           $("select").multipleSelect({
+            width:770,
+            multiple: true,
+            multipleWidth: 120,
+			placeholder: "可複選或全選"
+        });
+    	   $( ".datepicker" ).datepicker();
+    });
+</script>
+
+<script type="text/javascript" src="js/GenCommon.js"></script><!-- UIcolor JS -->
+<script type="text/javascript" src="js/PageCommon.js"></script><!-- 系統共用 JS -->
+</body>
+</html>

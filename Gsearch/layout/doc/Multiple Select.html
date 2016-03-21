@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Multiple Select</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta content="Multiple Select" property="og:title">
+  <meta content="Multiple select is a jQuery plugin to select multiple elements with checkboxes :)." name="description">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="http://wenzhixin.net.cn/p/multiple-select/docs/css/base.css">
+
+  <script async="" src="./Multiple Select_files/analytics.js"></script><script src="./Multiple Select_files/jquery.min.js"></script>
+  <script src="./Multiple Select_files/es5-shim.min.js"></script>
+  <!-- Flatdoc -->
+  <script src="./Multiple Select_files/legacy.js"></script>
+  <script src="./Multiple Select_files/flatdoc.js"></script>
+
+  <!-- Flatdoc theme -->
+  <link href="http://wenzhixin.net.cn/p/multiple-select/docs/assets/flatdoc/theme-white/style.css" rel="stylesheet">
+  <script src="./Multiple Select_files/script.js"></script>
+
+  <!-- Multiple Select -->
+  <link href="http://wenzhixin.net.cn/p/multiple-select/multiple-select.css" rel="stylesheet">
+  <script src="./Multiple Select_files/jquery.multiple.select.js"></script>
+  
+  <!--[if lt IE 9]>
+    <script src="assets/html5shiv.js"></script>
+    <script src="assets/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- js -->
+  <script src="./Multiple Select_files/index.js"></script>
+</head>
+<body role="flatdoc">
+  <div class="header">
+    <div class="left">
+      <h1>Multiple Select</h1>
+      <ul>
+        <li><a href="https://github.com/wenzhixin/multiple-select">View on GitHub</a></li>
+        <li><a href="https://github.com/wenzhixin/multiple-select/issues">Issues</a></li>
+        <li><a href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html">English</a></li>
+        <li><a href="./Multiple Select_files/Multiple Select.html">Chinese</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <!-- GitHub buttons: see http://ghbtns.com -->
+        <iframe src="./Multiple Select_files/github-btn(1).html" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <iframe src="./Multiple Select_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+        <iframe src="./Multiple Select_files/github-btn(2).html" allowtransparency="true" frameborder="0" scrolling="0" width="175" height="20"></iframe>
+    </div>
+  </div>
+
+  <div class="content-root">
+    <div class="menubar">
+      <div class="section">
+        <a class="big button" href="https://github.com/wenzhixin/multiple-select" target="_blank">Download</a>
+      </div>
+      <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="multiple-select-item" class="level-2"><a id="multiple-select-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#multiple-select" class="level-2">Multiple Select</a></li><li id="requirements-item" class="level-2"><a id="requirements-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#requirements" class="level-2 active">Requirements</a></li><li id="features-item" class="level-2"><a id="features-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#features" class="level-2">Features</a></li><li id="browser-compatibility-item" class="level-2"><a id="browser-compatibility-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#browser-compatibility" class="level-2">Browser Compatibility</a></li><li id="examples-item" class="level-2"><a id="examples-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#examples" class="level-2">Examples</a><ul class="level-3" id="examples-list"><li id="the-basics1-item" class="level-3"><a id="the-basics1-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-basics1" class="level-3">The Basics1</a></li><li id="the-basics2-item" class="level-3"><a id="the-basics2-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-basics2" class="level-3">The Basics2</a></li><li id="the-basics3-item" class="level-3"><a id="the-basics3-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-basics3" class="level-3">The Basics3</a></li><li id="with-optgroups1-item" class="level-3"><a id="with-optgroups1-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#with-optgroups1" class="level-3">With Optgroups1</a></li><li id="with-optgroups2-item" class="level-3"><a id="with-optgroups2-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#with-optgroups2" class="level-3">With Optgroups2</a></li><li id="the-placeholder-item" class="level-3"><a id="the-placeholder-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-placeholder" class="level-3">The Placeholder</a></li><li id="the-multiple-items-item" class="level-3"><a id="the-multiple-items-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-multiple-items" class="level-3">The Multiple Items</a></li><li id="with-optgroups-item" class="level-3"><a id="with-optgroups-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#with-optgroups" class="level-3">With Optgroups</a></li><li id="the-hide-select-all-item" class="level-3"><a id="the-hide-select-all-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-hide-select-all" class="level-3">The Hide Select All</a></li><li id="the-single-row-item" class="level-3"><a id="the-single-row-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-single-row" class="level-3">The Single Row</a></li><li id="the-position-item" class="level-3"><a id="the-position-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-position" class="level-3">The Position</a></li><li id="the-filter1-item" class="level-3"><a id="the-filter1-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-filter1" class="level-3">The Filter1</a></li><li id="the-filter2-item" class="level-3"><a id="the-filter2-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-filter2" class="level-3">The Filter2</a></li><li id="setselects-getselects-item" class="level-3"><a id="setselects-getselects-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#setselects-getselects" class="level-3">SetSelects/GetSelects</a></li><li id="enable-disable-item" class="level-3"><a id="enable-disable-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#enable-disable" class="level-3">Enable/Disable</a></li><li id="checkall-uncheckall-item" class="level-3"><a id="checkall-uncheckall-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#checkall-uncheckall" class="level-3">CheckAll/UncheckAll</a></li><li id="the-refresh-item" class="level-3"><a id="the-refresh-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-refresh" class="level-3">The Refresh</a></li><li id="the-callbacks-events-item" class="level-3"><a id="the-callbacks-events-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#the-callbacks-events" class="level-3">The Callbacks/Events</a></li></ul></li><li id="documentation-item" class="level-2"><a id="documentation-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#documentation" class="level-2">Documentation</a><ul class="level-3" id="documentation-list"><li id="constructor-item" class="level-3"><a id="constructor-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#constructor" class="level-3">Constructor</a></li><li id="events-item" class="level-3"><a id="events-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#events" class="level-3">Events</a></li><li id="methods-item" class="level-3"><a id="methods-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#methods" class="level-3">Methods</a></li></ul></li><li id="about-item" class="level-2"><a id="about-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#about" class="level-2">About</a></li><li id="acknowledgements-item" class="level-2"><a id="acknowledgements-link" href="http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#acknowledgements" class="level-2">Acknowledgements</a></li></ul></li></ul></li></ul></div>
+    </div>
+    <div role="flatdoc-content" class="content"><h2 id="multiple-select">Multiple Select</h2><p>Multiple select 是一个通过复选框来选择多元素的 jQuery 插件:).</p><p><em>当前版本: 1.0.9</em></p><h2 id="requirements">Requirements</h2><ul>
+<li>jQuery &gt;= 1.7.0</li>
+</ul><h2 id="features">Features</h2><ul>
+<li>默认选项允许显示复选框。</li>
+<li>支持分组显示元素。</li>
+<li>支持在一行中显示多个选项。</li>
+<li>支持全选。</li>
+<li>支持显示默认提示信息。</li>
+</ul><h2 id="browser-compatibility">Browser Compatibility</h2><ul>
+<li>IE 7+</li>
+<li>Chrome 8+</li>
+<li>Firefox 10+</li>
+<li>Safari 3+</li>
+<li>Opera 10.6+</li>
+</ul><h2 id="examples">Examples</h2><h3 id="the-basics1">The Basics1</h3><p>Multiple Select 可以将标准的复选框：</p><p id="e1_f">
+    <select class="w300" multiple="multiple">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+</p><p>转换为：</p><p id="e1_t" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> January</label></li><li><label><input type="checkbox" name="selectItem" value="2"> February</label></li><li><label><input type="checkbox" name="selectItem" value="3"> March</label></li><li><label><input type="checkbox" name="selectItem" value="4"> April</label></li><li><label><input type="checkbox" name="selectItem" value="5"> May</label></li><li><label><input type="checkbox" name="selectItem" value="6"> June</label></li><li><label><input type="checkbox" name="selectItem" value="7"> July</label></li><li><label><input type="checkbox" name="selectItem" value="8"> August</label></li><li><label><input type="checkbox" name="selectItem" value="9"> September</label></li><li><label><input type="checkbox" name="selectItem" value="10"> October</label></li><li><label><input type="checkbox" name="selectItem" value="11"> November</label></li><li><label><input type="checkbox" name="selectItem" value="12"> December</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;January&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"12"</span>&gt;December&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect();
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-basics2">The Basics2</h3><p>Multiple Select 可以将标准的复选框：</p><p id="e2_f">
+    <select class="w300" multiple="multiple" disabled="disabled">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+</p><p>转换为：</p><p id="e2_t" style="display: block;">
+    <select class="w300" multiple="multiple" disabled="disabled" style="display: none;">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice disabled"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> January</label></li><li><label><input type="checkbox" name="selectItem" value="2"> February</label></li><li><label><input type="checkbox" name="selectItem" value="3"> March</label></li><li><label><input type="checkbox" name="selectItem" value="4"> April</label></li><li><label><input type="checkbox" name="selectItem" value="5"> May</label></li><li><label><input type="checkbox" name="selectItem" value="6"> June</label></li><li><label><input type="checkbox" name="selectItem" value="7"> July</label></li><li><label><input type="checkbox" name="selectItem" value="8"> August</label></li><li><label><input type="checkbox" name="selectItem" value="9"> September</label></li><li><label><input type="checkbox" name="selectItem" value="10"> October</label></li><li><label><input type="checkbox" name="selectItem" value="11"> November</label></li><li><label><input type="checkbox" name="selectItem" value="12"> December</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span> disabled=<span class="string">"disabled"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;January&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"12"</span>&gt;December&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect();
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-basics3">The Basics3</h3><p>Multiple Select 可以将标准的复选框：</p><p id="e3_f">
+    <select class="w300" multiple="multiple">
+        <option value="1" selected="selected">January</option>
+        <option value="2" disabled="disabled">February</option>
+        <option value="3" selected="selected" disabled="disabled">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+</p><p>转换为：</p><p id="e3_t" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1" selected="selected">January</option>
+        <option value="2" disabled="disabled">February</option>
+        <option value="3" selected="selected" disabled="disabled">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class=""> January,  March</span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="selected"><label><input type="checkbox" name="selectItem" value="1" checked="checked"> January</label></li><li><label class="disabled"><input type="checkbox" name="selectItem" value="2" disabled="disabled"> February</label></li><li class="selected"><label class="disabled"><input type="checkbox" name="selectItem" value="3" checked="checked" disabled="disabled"> March</label></li><li><label><input type="checkbox" name="selectItem" value="4"> April</label></li><li><label><input type="checkbox" name="selectItem" value="5"> May</label></li><li><label><input type="checkbox" name="selectItem" value="6"> June</label></li><li><label><input type="checkbox" name="selectItem" value="7"> July</label></li><li><label><input type="checkbox" name="selectItem" value="8"> August</label></li><li><label><input type="checkbox" name="selectItem" value="9"> September</label></li><li><label><input type="checkbox" name="selectItem" value="10"> October</label></li><li><label><input type="checkbox" name="selectItem" value="11"> November</label></li><li><label><input type="checkbox" name="selectItem" value="12"> December</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span> selected=<span class="string">"selected"</span>&gt;January&lt;<span class="keyword">/option&gt;
+</span>        &lt;<span class="keyword">option</span> value=<span class="string">"2"</span> disabled=<span class="string">"disabled"</span>&gt;February&lt;<span class="keyword">/option&gt;
+</span>        &lt;<span class="keyword">option</span> value=<span class="string">"3"</span> selected=<span class="string">"selected"</span> disabled=<span class="string">"disabled"</span>&gt;March&lt;<span class="keyword">/option&gt;
+</span>        ...
+    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect();
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="with-optgroups1">With Optgroups1</h3><p>Multiple Select 可以将标准的复选框：</p><p id="e4_f">
+    <select class="w300" multiple="multiple">
+        <optgroup label="Group 1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="7">Option 7</option>
+            <option value="8">Option 8</option>
+            <option value="9">Option 9</option>
+        </optgroup>
+    </select>
+</p><p>转换为：</p><p id="e4_t" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <optgroup label="Group 1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="7">Option 7</option>
+            <option value="8">Option 8</option>
+            <option value="9">Option 9</option>
+        </optgroup>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="group"><label class="optgroup" data-group="group_0"><input type="checkbox" name="selectGroup"> Group 1</label></li><li><label><input type="checkbox" name="selectItem" value="1" data-group="group_0"> Option 1</label></li><li><label><input type="checkbox" name="selectItem" value="2" data-group="group_0"> Option 2</label></li><li><label><input type="checkbox" name="selectItem" value="3" data-group="group_0"> Option 3</label></li><li class="group"><label class="optgroup" data-group="group_1"><input type="checkbox" name="selectGroup"> Group 2</label></li><li><label><input type="checkbox" name="selectItem" value="4" data-group="group_1"> Option 4</label></li><li><label><input type="checkbox" name="selectItem" value="5" data-group="group_1"> Option 5</label></li><li><label><input type="checkbox" name="selectItem" value="6" data-group="group_1"> Option 6</label></li><li class="group"><label class="optgroup" data-group="group_2"><input type="checkbox" name="selectGroup"> Group 3</label></li><li><label><input type="checkbox" name="selectItem" value="7" data-group="group_2"> Option 7</label></li><li><label><input type="checkbox" name="selectItem" value="8" data-group="group_2"> Option 8</label></li><li><label><input type="checkbox" name="selectItem" value="9" data-group="group_2"> Option 9</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 1"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;Option 1&lt;<span class="keyword">/option&gt;
+</span>            ...
+        &lt;<span class="keyword">/optgroup&gt;
+</span>        ...
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 3"</span>&gt;
+            ...
+            &lt;<span class="keyword">option</span> value=<span class="string">"9"</span>&gt;Option 9&lt;<span class="keyword">/option&gt;
+</span>        &lt;<span class="keyword">/optgroup&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect();
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="with-optgroups2">With Optgroups2</h3><p>Multiple Select 可以将标准的复选框：</p><p id="e5_f">
+    <select class="w300" multiple="multiple">
+        <optgroup label="Group 1" disabled="disabled">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="7">Option 7</option>
+            <option value="8">Option 8</option>
+            <option value="9">Option 9</option>
+        </optgroup>
+    </select>
+</p><p>转换为：</p><p id="e5_t" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <optgroup label="Group 1" disabled="disabled">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="7">Option 7</option>
+            <option value="8">Option 8</option>
+            <option value="9">Option 9</option>
+        </optgroup>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="group"><label class="optgroup disabled" data-group="group_0"><input type="checkbox" name="selectGroup" disabled="disabled"> Group 1</label></li><li><label class="disabled"><input type="checkbox" name="selectItem" value="1" disabled="disabled" data-group="group_0"> Option 1</label></li><li><label class="disabled"><input type="checkbox" name="selectItem" value="2" disabled="disabled" data-group="group_0"> Option 2</label></li><li><label class="disabled"><input type="checkbox" name="selectItem" value="3" disabled="disabled" data-group="group_0"> Option 3</label></li><li class="group"><label class="optgroup" data-group="group_1"><input type="checkbox" name="selectGroup"> Group 2</label></li><li><label><input type="checkbox" name="selectItem" value="4" data-group="group_1"> Option 4</label></li><li><label><input type="checkbox" name="selectItem" value="5" data-group="group_1"> Option 5</label></li><li><label><input type="checkbox" name="selectItem" value="6" data-group="group_1"> Option 6</label></li><li class="group"><label class="optgroup" data-group="group_2"><input type="checkbox" name="selectGroup"> Group 3</label></li><li><label><input type="checkbox" name="selectItem" value="7" data-group="group_2"> Option 7</label></li><li><label><input type="checkbox" name="selectItem" value="8" data-group="group_2"> Option 8</label></li><li><label><input type="checkbox" name="selectItem" value="9" data-group="group_2"> Option 9</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 1"</span> disabled=<span class="string">"disabled"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;Option 1&lt;<span class="keyword">/option&gt;
+</span>            ...
+        &lt;<span class="keyword">/optgroup&gt;
+</span>        ...
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 3"</span>&gt;
+            ...
+            &lt;<span class="keyword">option</span> value=<span class="string">"9"</span>&gt;Option 9&lt;<span class="keyword">/option&gt;
+</span>        &lt;<span class="keyword">/optgroup&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect();
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-placeholder">The Placeholder</h3><p id="e6" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder">Here is the placeholder</span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> January</label></li><li><label><input type="checkbox" name="selectItem" value="2"> February</label></li><li><label><input type="checkbox" name="selectItem" value="3"> March</label></li><li><label><input type="checkbox" name="selectItem" value="4"> April</label></li><li><label><input type="checkbox" name="selectItem" value="5"> May</label></li><li><label><input type="checkbox" name="selectItem" value="6"> June</label></li><li><label><input type="checkbox" name="selectItem" value="7"> July</label></li><li><label><input type="checkbox" name="selectItem" value="8"> August</label></li><li><label><input type="checkbox" name="selectItem" value="9"> September</label></li><li><label><input type="checkbox" name="selectItem" value="10"> October</label></li><li><label><input type="checkbox" name="selectItem" value="11"> November</label></li><li><label><input type="checkbox" name="selectItem" value="12"> December</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;January&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"12"</span>&gt;December&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            placeholder: <span class="string">"Here is the placeholder"</span>
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-multiple-items">The Multiple Items</h3><p>Multiple Select 支持在一行中显示多个选项：</p><p id="e7" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+    </select><div class="ms-parent w300" style="width: 460px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="1"> 1</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="2"> 2</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="3"> 3</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="4"> 4</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="5"> 5</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="6"> 6</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="7"> 7</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="8"> 8</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="9"> 9</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="10"> 10</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="11"> 11</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="12"> 12</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="13"> 13</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="14"> 14</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="15"> 15</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="16"> 16</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="17"> 17</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="18"> 18</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="19"> 19</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="20"> 20</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="21"> 21</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="22"> 22</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="23"> 23</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="24"> 24</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="25"> 25</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="26"> 26</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="27"> 27</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="28"> 28</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="29"> 29</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="30"> 30</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;1&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"30"</span>&gt;30&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            width: 460,
+            multiple: true,
+            multipleWidth: 55
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="with-optgroups">With Optgroups</h3><p>Multiple Select 支持在一行中显示多个选项以及支持分组。</p><p id="e8" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <optgroup label="Group 1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </optgroup>
+    </select><div class="ms-parent w300" style="width: 100%;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="group"><label class="optgroup" data-group="group_0"><input type="checkbox" name="selectGroup"> Group 1</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="1" data-group="group_0"> 1</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="2" data-group="group_0"> 2</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="3" data-group="group_0"> 3</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="4" data-group="group_0"> 4</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="5" data-group="group_0"> 5</label></li><li class="group"><label class="optgroup" data-group="group_1"><input type="checkbox" name="selectGroup"> Group 2</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="6" data-group="group_1"> 6</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="7" data-group="group_1"> 7</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="8" data-group="group_1"> 8</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="9" data-group="group_1"> 9</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="10" data-group="group_1"> 10</label></li><li class="group"><label class="optgroup" data-group="group_2"><input type="checkbox" name="selectGroup"> Group 3</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="11" data-group="group_2"> 11</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="12" data-group="group_2"> 12</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="13" data-group="group_2"> 13</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="14" data-group="group_2"> 14</label></li><li class="multiple" style="width: 55px;"><label><input type="checkbox" name="selectItem" value="15" data-group="group_2"> 15</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 1"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;1&lt;<span class="keyword">/option&gt;
+</span>            ...
+        &lt;<span class="keyword">/optgroup&gt;
+</span>        ...
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 3"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"15"</span>&gt;15&lt;<span class="keyword">/option&gt;
+</span>        &lt;<span class="keyword">/optgroup&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            multiple: true,
+            multipleWidth: 55
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-hide-select-all">The Hide Select All</h3><p id="e9" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">First</option>
+        <option value="2">Second</option>
+        <option value="3">Third</option>
+        <option value="4">Fourth</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li><label><input type="checkbox" name="selectItem" value="1"> First</label></li><li><label><input type="checkbox" name="selectItem" value="2"> Second</label></li><li><label><input type="checkbox" name="selectItem" value="3"> Third</label></li><li><label><input type="checkbox" name="selectItem" value="4"> Fourth</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;First&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"4"</span>&gt;Fourth&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            selectAll: false
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-single-row">The Single Row</h3><p id="e17" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">First</option>
+        <option value="2">Second</option>
+        <option value="3">Third</option>
+        <option value="4" selected="selected">Fourth</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class=""> Fourth</span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li><label><input type="radio" name="selectItem" value="1"> First</label></li><li><label><input type="radio" name="selectItem" value="2"> Second</label></li><li><label><input type="radio" name="selectItem" value="3"> Third</label></li><li class="selected"><label><input type="radio" name="selectItem" value="4" checked="checked"> Fourth</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;First&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"4"</span> selected=<span class="string">"selected"</span>&gt;Fourth&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            single: true
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-position">The Position</h3><p>设置下拉列表显示在上方。</p><p id="e18" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop top"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> January</label></li><li><label><input type="checkbox" name="selectItem" value="2"> February</label></li><li><label><input type="checkbox" name="selectItem" value="3"> March</label></li><li><label><input type="checkbox" name="selectItem" value="4"> April</label></li><li><label><input type="checkbox" name="selectItem" value="5"> May</label></li><li><label><input type="checkbox" name="selectItem" value="6"> June</label></li><li><label><input type="checkbox" name="selectItem" value="7"> July</label></li><li><label><input type="checkbox" name="selectItem" value="8"> August</label></li><li><label><input type="checkbox" name="selectItem" value="9"> September</label></li><li><label><input type="checkbox" name="selectItem" value="10"> October</label></li><li><label><input type="checkbox" name="selectItem" value="11"> November</label></li><li><label><input type="checkbox" name="selectItem" value="12"> December</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span> disabled=<span class="string">"disabled"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;January&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"12"</span>&gt;December&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">'select'</span>).multipleSelect({
+            position: <span class="string">'top'</span>
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-filter1">The Filter1</h3><p id="e14" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">abc</option>
+        <option value="2">bcd</option>
+        <option value="3">cde</option>
+        <option value="4">def</option>
+        <option value="5">efg</option>
+        <option value="6">fgh</option>
+        <option value="7">ghi</option>
+        <option value="8">hij</option>
+        <option value="9">ijk</option>
+        <option value="10">jkl</option>
+        <option value="11">klm</option>
+        <option value="12">lmn</option>
+        <option value="13">mno</option>
+        <option value="14">nop</option>
+        <option value="15">opq</option>
+        <option value="16">pqr</option>
+        <option value="17">qrs</option>
+        <option value="18">rst</option>
+        <option value="19">stu</option>
+        <option value="20">tuv</option>
+        <option value="21">uvw</option>
+        <option value="22">vwx</option>
+        <option value="23">wxy</option>
+        <option value="24">xyz</option>
+        <option value="25">123</option>
+        <option value="26">234</option>
+        <option value="27">345</option>
+        <option value="28">456</option>
+        <option value="29">567</option>
+        <option value="30">678</option>
+        <option value="31">789</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><div class="ms-search"><input type="text" autocomplete="off" autocorrect="off" autocapitilize="off" spellcheck="false"></div><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> abc</label></li><li><label><input type="checkbox" name="selectItem" value="2"> bcd</label></li><li><label><input type="checkbox" name="selectItem" value="3"> cde</label></li><li><label><input type="checkbox" name="selectItem" value="4"> def</label></li><li><label><input type="checkbox" name="selectItem" value="5"> efg</label></li><li><label><input type="checkbox" name="selectItem" value="6"> fgh</label></li><li><label><input type="checkbox" name="selectItem" value="7"> ghi</label></li><li><label><input type="checkbox" name="selectItem" value="8"> hij</label></li><li><label><input type="checkbox" name="selectItem" value="9"> ijk</label></li><li><label><input type="checkbox" name="selectItem" value="10"> jkl</label></li><li><label><input type="checkbox" name="selectItem" value="11"> klm</label></li><li><label><input type="checkbox" name="selectItem" value="12"> lmn</label></li><li><label><input type="checkbox" name="selectItem" value="13"> mno</label></li><li><label><input type="checkbox" name="selectItem" value="14"> nop</label></li><li><label><input type="checkbox" name="selectItem" value="15"> opq</label></li><li><label><input type="checkbox" name="selectItem" value="16"> pqr</label></li><li><label><input type="checkbox" name="selectItem" value="17"> qrs</label></li><li><label><input type="checkbox" name="selectItem" value="18"> rst</label></li><li><label><input type="checkbox" name="selectItem" value="19"> stu</label></li><li><label><input type="checkbox" name="selectItem" value="20"> tuv</label></li><li><label><input type="checkbox" name="selectItem" value="21"> uvw</label></li><li><label><input type="checkbox" name="selectItem" value="22"> vwx</label></li><li><label><input type="checkbox" name="selectItem" value="23"> wxy</label></li><li><label><input type="checkbox" name="selectItem" value="24"> xyz</label></li><li><label><input type="checkbox" name="selectItem" value="25"> 123</label></li><li><label><input type="checkbox" name="selectItem" value="26"> 234</label></li><li><label><input type="checkbox" name="selectItem" value="27"> 345</label></li><li><label><input type="checkbox" name="selectItem" value="28"> 456</label></li><li><label><input type="checkbox" name="selectItem" value="29"> 567</label></li><li><label><input type="checkbox" name="selectItem" value="30"> 678</label></li><li><label><input type="checkbox" name="selectItem" value="31"> 789</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;abc&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"31"</span>&gt;789&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            filter: true
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-filter2">The Filter2</h3><p id="e15" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <optgroup label="Group 1">
+            <option value="1">000</option>
+            <option value="2">111</option>
+            <option value="3">222</option>
+            <option value="4">333</option>
+            <option value="5">444</option>
+            <option value="6">555</option>
+            <option value="7">666</option>
+            <option value="8">777</option>
+            <option value="9">888</option>
+            <option value="10">999</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="11">210</option>
+            <option value="12">321</option>
+            <option value="13">432</option>
+            <option value="14">543</option>
+            <option value="15">654</option>
+            <option value="16">765</option>
+            <option value="17">876</option>
+            <option value="18">987</option>
+            <option value="19">098</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="20">012</option>
+            <option value="21">123</option>
+            <option value="22">234</option>
+            <option value="23">345</option>
+            <option value="24">456</option>
+            <option value="25">567</option>
+            <option value="26">678</option>
+            <option value="27">789</option>
+            <option value="28">890</option>
+        </optgroup>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><div class="ms-search"><input type="text" autocomplete="off" autocorrect="off" autocapitilize="off" spellcheck="false"></div><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="group"><label class="optgroup" data-group="group_0"><input type="checkbox" name="selectGroup"> Group 1</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="1" data-group="group_0"> 000</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="2" data-group="group_0"> 111</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="3" data-group="group_0"> 222</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="4" data-group="group_0"> 333</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="5" data-group="group_0"> 444</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="6" data-group="group_0"> 555</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="7" data-group="group_0"> 666</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="8" data-group="group_0"> 777</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="9" data-group="group_0"> 888</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="10" data-group="group_0"> 999</label></li><li class="group"><label class="optgroup" data-group="group_1"><input type="checkbox" name="selectGroup"> Group 2</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="11" data-group="group_1"> 210</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="12" data-group="group_1"> 321</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="13" data-group="group_1"> 432</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="14" data-group="group_1"> 543</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="15" data-group="group_1"> 654</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="16" data-group="group_1"> 765</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="17" data-group="group_1"> 876</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="18" data-group="group_1"> 987</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="19" data-group="group_1"> 098</label></li><li class="group"><label class="optgroup" data-group="group_2"><input type="checkbox" name="selectGroup"> Group 3</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="20" data-group="group_2"> 012</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="21" data-group="group_2"> 123</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="22" data-group="group_2"> 234</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="23" data-group="group_2"> 345</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="24" data-group="group_2"> 456</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="25" data-group="group_2"> 567</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="26" data-group="group_2"> 678</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="27" data-group="group_2"> 789</label></li><li class="multiple" style="width: 80px;"><label><input type="checkbox" name="selectItem" value="28" data-group="group_2"> 890</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 1"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;000&lt;<span class="keyword">/option&gt;
+</span>            ...
+        ...
+    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            filter: true,
+            multiple: true
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="setselects-getselects">SetSelects/GetSelects</h3><p>
+    <button id="setSelectsBtn" class="button">SetSelects</button>
+    <button id="getSelectsBtn" class="button">GetSelects</button>
+</p><p id="e10" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> Monday</label></li><li><label><input type="checkbox" name="selectItem" value="2"> Tuesday</label></li><li><label><input type="checkbox" name="selectItem" value="3"> Wednesday</label></li><li><label><input type="checkbox" name="selectItem" value="4"> Thursday</label></li><li><label><input type="checkbox" name="selectItem" value="5"> Friday</label></li><li><label><input type="checkbox" name="selectItem" value="6"> Saturday</label></li><li><label><input type="checkbox" name="selectItem" value="7"> Sunday</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"setSelectsBtn"</span>&gt;SetSelects&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"getSelectsBtn"</span>&gt;GetSelects&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;Monday&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"7"</span>&gt;Sunday&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect();
+        $(<span class="string">"#setSelectsBtn"</span>).click(function() {
+            $(<span class="string">"select"</span>).multipleSelect(<span class="string">"setSelects"</span>, [1, 3]);
+        });
+        $(<span class="string">"#getSelectsBtn"</span>).click(function() {
+            alert(<span class="string">"Selected values: "</span> + $(<span class="string">"select"</span>).multipleSelect(<span class="string">"getSelects"</span>));
+            alert(<span class="string">"Selected texts: "</span> + $(<span class="string">"select"</span>).multipleSelect(<span class="string">"getSelects"</span>, <span class="string">"text"</span>));
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="enable-disable">Enable/Disable</h3><p>
+    <button id="enableBtn" class="button">Enable</button>
+    <button id="disableBtn" class="button">Disable</button>
+</p><p id="e11" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> Monday</label></li><li><label><input type="checkbox" name="selectItem" value="2"> Tuesday</label></li><li><label><input type="checkbox" name="selectItem" value="3"> Wednesday</label></li><li><label><input type="checkbox" name="selectItem" value="4"> Thursday</label></li><li><label><input type="checkbox" name="selectItem" value="5"> Friday</label></li><li><label><input type="checkbox" name="selectItem" value="6"> Saturday</label></li><li><label><input type="checkbox" name="selectItem" value="7"> Sunday</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"enableBtn"</span>&gt;Enable&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"disableBtn"</span>&gt;Disabled&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;Monday&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"7"</span>&gt;Sunday&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect();
+        $(<span class="string">"#setSelectsBtn"</span>).click(function() {
+            $(<span class="string">"select"</span>).multipleSelect(<span class="string">"enable"</span>);
+        });
+        $(<span class="string">"#getSelectsBtn"</span>).click(function() {
+            $(<span class="string">"select"</span>).multipleSelect(<span class="string">"disable"</span>);
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="checkall-uncheckall">CheckAll/UncheckAll</h3><p>
+    <button id="checkAllBtn" class="button">CheckAll</button>
+    <button id="uncheckAllBtn" class="button">UncheckAll</button>
+</p><p id="e12" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> Monday</label></li><li><label><input type="checkbox" name="selectItem" value="2"> Tuesday</label></li><li><label><input type="checkbox" name="selectItem" value="3"> Wednesday</label></li><li><label><input type="checkbox" name="selectItem" value="4"> Thursday</label></li><li><label><input type="checkbox" name="selectItem" value="5"> Friday</label></li><li><label><input type="checkbox" name="selectItem" value="6"> Saturday</label></li><li><label><input type="checkbox" name="selectItem" value="7"> Sunday</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"enableBtn"</span>&gt;Enable&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">button</span> id=<span class="string">"disableBtn"</span>&gt;Disabled&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;Monday&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"7"</span>&gt;Sunday&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect();
+        $(<span class="string">"#setSelectsBtn"</span>).click(function() {
+            $(<span class="string">"select"</span>).multipleSelect(<span class="string">"checkAll"</span>);
+        });
+        $(<span class="string">"#getSelectsBtn"</span>).click(function() {
+            $(<span class="string">"select"</span>).multipleSelect(<span class="string">"uncheckAll"</span>);
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-refresh">The Refresh</h3><p>重新加载 Multiple Select：
+假如你是通过 AJAX 或者 DOM 来手动添加或者删除 option 选项，可以通过 refresh 方法来重新加载 Multiple Select。</p><p>
+    <input id="refreshInput" type="text" required="required">
+    <button id="refreshAdd" class="button">Add + Refresh</button>
+    <br>
+    <label><input id="refreshSelected" type="checkbox">Selected?</label>
+    <label><input id="refreshDisabled" type="checkbox">Disabled?</label>
+</p><p id="e13" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li><label><input type="checkbox" name="selectItem" value="1"> 1</label></li><li><label><input type="checkbox" name="selectItem" value="2"> 2</label></li><li><label><input type="checkbox" name="selectItem" value="3"> 3</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">input</span> id=<span class="string">"refreshInput"</span> type=<span class="string">"text"</span> required=<span class="string">"required"</span> /&gt;
+    &lt;<span class="keyword">button</span> id=<span class="string">"refreshAdd"</span>&gt;Add + Refresh&lt;<span class="keyword">/button&gt;
+</span>    &lt;<span class="keyword">br</span> /&gt;
+    &lt;<span class="keyword">label&gt;&lt;input</span> id=<span class="string">"refreshSelected"</span> type=<span class="string">"checkbox"</span> /&gt;Selected?&lt;<span class="keyword">/label&gt;
+</span>    &lt;<span class="keyword">label&gt;&lt;input</span> id=<span class="string">"refreshDisabled"</span> type=<span class="string">"checkbox"</span> /&gt;Disabled?&lt;<span class="keyword">/label&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;1&lt;<span class="keyword">/option&gt;
+</span>        ...
+        &lt;<span class="keyword">option</span> value=<span class="string">"3"</span>&gt;3&lt;<span class="keyword">/option&gt;
+</span>    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect();
+        $(<span class="string">"#refreshAdd"</span>).click(function() {
+            var $select = $(<span class="string">"select"</span>),
+                $input = $(<span class="string">"#refreshInput"</span>),
+                $selected = $(<span class="string">"#refreshSelected"</span>),
+                $disabled = $(<span class="string">"#refreshDisabled"</span>),
+                value = $.trim($input.val()),
+                $opt = $(<span class="string">"&lt;<span class="keyword">option</span> /&gt;"</span>, {
+                    value: value,
+                    text: value
+                });
+            if (!value) {
+                $input.focus();
+                return;
+            }
+            if ($selected.is(<span class="string">":checked"</span>)){
+                $opt.prop(<span class="string">"selected"</span>, true);
+            }
+            if($disabled.is(<span class="string">":checked"</span>)){
+                $opt.attr(<span class="string">"disabled"</span>, true);
+            }
+            $input.val(<span class="string">""</span>);
+            $select.append($opt).multipleSelect(<span class="string">"refresh"</span>);
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h3 id="the-callbacks-events">The Callbacks/Events</h3><p id="eventResult" style="color: #444; background-color: #ddd;">这里显示事件的结果。</p><p id="e16" style="display: block;">
+    <select class="w300" multiple="multiple" style="display: none;">
+        <optgroup label="Group 1">
+            <option value="1">000</option>
+            <option value="2">111</option>
+            <option value="3">222</option>
+            <option value="4">333</option>
+            <option value="5">444</option>
+            <option value="6">555</option>
+            <option value="7">666</option>
+            <option value="8">777</option>
+            <option value="9">888</option>
+            <option value="10">999</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="11">210</option>
+            <option value="12">321</option>
+            <option value="13">432</option>
+            <option value="14">543</option>
+            <option value="15">654</option>
+            <option value="16">765</option>
+            <option value="17">876</option>
+            <option value="18">987</option>
+            <option value="19">098</option>
+        </optgroup>
+        <optgroup label="Group 3">
+            <option value="20">012</option>
+            <option value="21">123</option>
+            <option value="22">234</option>
+            <option value="23">345</option>
+            <option value="24">456</option>
+            <option value="25">567</option>
+            <option value="26">678</option>
+            <option value="27">789</option>
+            <option value="28">890</option>
+        </optgroup>
+    </select><div class="ms-parent w300" style="width: 300px;"><button type="button" class="ms-choice"><span class="placeholder"></span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="ms-select-all"><label><input type="checkbox" name="selectAll"> [Select all]</label></li><li class="group"><label class="optgroup" data-group="group_0"><input type="checkbox" name="selectGroup"> Group 1</label></li><li><label><input type="checkbox" name="selectItem" value="1" data-group="group_0"> 000</label></li><li><label><input type="checkbox" name="selectItem" value="2" data-group="group_0"> 111</label></li><li><label><input type="checkbox" name="selectItem" value="3" data-group="group_0"> 222</label></li><li><label><input type="checkbox" name="selectItem" value="4" data-group="group_0"> 333</label></li><li><label><input type="checkbox" name="selectItem" value="5" data-group="group_0"> 444</label></li><li><label><input type="checkbox" name="selectItem" value="6" data-group="group_0"> 555</label></li><li><label><input type="checkbox" name="selectItem" value="7" data-group="group_0"> 666</label></li><li><label><input type="checkbox" name="selectItem" value="8" data-group="group_0"> 777</label></li><li><label><input type="checkbox" name="selectItem" value="9" data-group="group_0"> 888</label></li><li><label><input type="checkbox" name="selectItem" value="10" data-group="group_0"> 999</label></li><li class="group"><label class="optgroup" data-group="group_1"><input type="checkbox" name="selectGroup"> Group 2</label></li><li><label><input type="checkbox" name="selectItem" value="11" data-group="group_1"> 210</label></li><li><label><input type="checkbox" name="selectItem" value="12" data-group="group_1"> 321</label></li><li><label><input type="checkbox" name="selectItem" value="13" data-group="group_1"> 432</label></li><li><label><input type="checkbox" name="selectItem" value="14" data-group="group_1"> 543</label></li><li><label><input type="checkbox" name="selectItem" value="15" data-group="group_1"> 654</label></li><li><label><input type="checkbox" name="selectItem" value="16" data-group="group_1"> 765</label></li><li><label><input type="checkbox" name="selectItem" value="17" data-group="group_1"> 876</label></li><li><label><input type="checkbox" name="selectItem" value="18" data-group="group_1"> 987</label></li><li><label><input type="checkbox" name="selectItem" value="19" data-group="group_1"> 098</label></li><li class="group"><label class="optgroup" data-group="group_2"><input type="checkbox" name="selectGroup"> Group 3</label></li><li><label><input type="checkbox" name="selectItem" value="20" data-group="group_2"> 012</label></li><li><label><input type="checkbox" name="selectItem" value="21" data-group="group_2"> 123</label></li><li><label><input type="checkbox" name="selectItem" value="22" data-group="group_2"> 234</label></li><li><label><input type="checkbox" name="selectItem" value="23" data-group="group_2"> 345</label></li><li><label><input type="checkbox" name="selectItem" value="24" data-group="group_2"> 456</label></li><li><label><input type="checkbox" name="selectItem" value="25" data-group="group_2"> 567</label></li><li><label><input type="checkbox" name="selectItem" value="26" data-group="group_2"> 678</label></li><li><label><input type="checkbox" name="selectItem" value="27" data-group="group_2"> 789</label></li><li><label><input type="checkbox" name="selectItem" value="28" data-group="group_2"> 890</label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+</p><pre><code class="lang-html">&lt;<span class="keyword">head&gt;
+</span>    &lt;<span class="keyword">link</span> href=<span class="string">"multiple-select.css"</span> rel=<span class="string">"stylesheet"</span>/&gt;
+&lt;<span class="keyword">/head&gt;
+&lt;body&gt;
+</span>    &lt;<span class="keyword">p</span> id=<span class="string">"eventResult"</span>&gt;Here is the result of event.&lt;<span class="keyword">/p&gt;
+</span>    &lt;<span class="keyword">select</span> multiple=<span class="string">"multiple"</span>&gt;
+        &lt;<span class="keyword">optgroup</span> label=<span class="string">"Group 1"</span>&gt;
+            &lt;<span class="keyword">option</span> value=<span class="string">"1"</span>&gt;000&lt;<span class="keyword">/option&gt;
+</span>            ...
+        ...
+    &lt;<span class="keyword">/select&gt;
+</span>    &lt;<span class="keyword">script</span> src=<span class="string">"jquery.multiple.select.js"</span>&gt;&lt;<span class="keyword">/script&gt;
+</span>    &lt;<span class="keyword">script&gt;
+</span>        $(<span class="string">"select"</span>).multipleSelect({
+            onOpen: function() {
+                $eventResult.text(<span class="string">'Select opened!'</span>);
+            },
+            onClose: function() {
+                $eventResult.text(<span class="string">'Select closed!'</span>);
+            },
+            onCheckAll: function() {
+                $eventResult.text(<span class="string">'Check all clicked!'</span>);
+            },
+            onUncheckAll: function() {
+                $eventResult.text(<span class="string">'Uncheck all clicked!'</span>);
+            },
+            onOptgroupClick: function(view) {
+                var values = $.map(view.children, function(child){
+                    return child.value;
+                }).join(<span class="string">', '</span>);
+                $eventResult.text(<span class="string">'Optgroup '</span> + view.label + <span class="string">' '</span> + 
+                    (view.checked ? <span class="string">'checked'</span> : <span class="string">'unchecked'</span>) + <span class="string">': '</span> + values);
+            },
+            onClick: function(view) {
+                $eventResult.text(view.label + <span class="string">'('</span> + view.value + <span class="string">') '</span> + 
+                    (view.checked ? <span class="string">'checked'</span> : <span class="string">'unchecked'</span>));
+            }
+        });
+    &lt;<span class="keyword">/script&gt;
+&lt;/body&gt;</span></code></pre><h2 id="documentation">Documentation</h2><h3 id="constructor">Constructor</h3><h4>isOpen</h4><p>类型: boolean    </p><p>是否打开下拉列表。</p><p>默认值为 <code>false</code>。</p><h4>placeholder</h4><p>类型: string    </p><p>显示默认的提示信息。</p><p>默认值为 <code>''</code>。</p><h4>selectAll</h4><p>类型: boolean    </p><p>是否显示全选复选框。</p><p>默认值为 <code>true</code>。</p><h4>selectAllText</h4><p>类型: string    </p><p>全选复选框的显示内容。</p><p>默认值为 <code>Select all</code>。</p><h4>multiple</h4><p>类型: boolean    </p><p>是否在一行中显示多个选项。</p><p>默认值为 <code>false</code>。</p><h4>multipleWidth</h4><p>类型: integer    </p><p>一行中每个选项的宽度。</p><p>默认值为 <code>80</code>。</p><h4>single</h4><p>类型: boolean</p><p>是否只允许你选择一行。</p><p>默认值为 <code>false</code>。</p><h4>position</h4><p>类型: string</p><p>定义下拉列表的位置，只能是 <code>bottom</code> 或者 <code>top</code>。</p><p>默认值为 <code>bottom</code>.</p><h4>filter</h4><p>类型: boolean</p><p>是否开启过滤功能。</p><p>默认值为 <code>false</code>。</p><h4>width</h4><p>类型: integer</p><p>定义下拉列表的宽度。</p><p>默认值为 <code>undefined</code>。 默认与 select 的宽度相同。</p><h4>maxHeight</h4><p>类型: integer</p><p>下拉列表的最大高度。</p><p>默认值为 <code>250</code>。</p><h3 id="events">Events</h3><h4>onOpen</h4><p>当下拉列表被打开时触发。</p><h4>onClose</h4><p>当下拉列表被关闭时触发。</p><h4>onCheckAll</h4><p>点击全选或者调用 “checkall” 方法时触发。</p><h4>onUncheckAll</h4><p>点击全不选或者调用 “uncheckall” 方法时触发。 </p><h4>onOptgroupClick</h4><p>点击分组时触发。</p><pre><code class="lang-javascript">onOptgroupClick: <span class="keyword">function</span>(view) {
+    /*
+    view.label: the text of the optgroup
+    view.checked: the checked of the optgroup
+    view.children: an array of the checkboxes (DOM elements) inside the optgroup
+    */
+}</code></pre><h4>onClick</h4><p>点击一个复选框时触发。</p><pre><code class="lang-javascript">onOptgroupClick: <span class="keyword">function</span>(view) {
+    /*
+    view.label: the text of the checkbox item
+    view.checked: the checked of the checkbox item
+    */
+}</code></pre><h3 id="methods">Methods</h3><h4>getSelects</h4><p>获取 Multiple Select 选择内容。</p><p>参数: type</p><p>类型: string</p><p>选择内容的类型，value 或者 text。</p><p>默认值为 <code>value</code>。</p><pre><code class="lang-javascript">alert(<span class="string">'Selected values: '</span> + $(<span class="string">'select'</span>).multipleSelect(<span class="string">'getSelects'</span>));
+alert(<span class="string">'Selected texts: '</span> + $(<span class="string">'select'</span>).multipleSelect(<span class="string">'getSelects'</span>, <span class="string">'text'</span>));</code></pre><h4>setSelects</h4><p>设置 Multiple Select 的内容。</p><p>参数: values</p><p>类型: array</p><p>选择框的内容信息。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'setSelects'</span>, [<span class="number">1</span>, <span class="number">3</span>]);</code></pre><h4>enable</h4><p>启用 Multiple Select。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'enable'</span>);</code></pre><h4>disable</h4><p>禁用 Multiple Select。在这种模式下，不允许用户操作。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'disable'</span>);</code></pre><h4>checkAll</h4><p>全选所有的复选框。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'checkAll'</span>);</code></pre><h4>uncheckAll</h4><p>全不选所有的复选框。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'uncheckAll'</span>);</code></pre><h4>refresh</h4><p>重新加载 Multiple Select。</p><p>假如你是通过 AJAX 或者 DOM 来手动添加或者删除 option 选项，可以通过 refresh 方法来重新加载 Multiple Select。</p><pre><code class="lang-javascript">$(<span class="string">'select'</span>).multipleSelect(<span class="string">'refresh'</span>);</code></pre><h2 id="about">About</h2><p><a href="http://wenzhixin.net.cn/">博客</a></p><p><a href="http://www.scutech.com/">scutech</a></p><h2 id="acknowledgements">Acknowledgements</h2><p>© 2012-2014, Multiple Selected is licensed under the The MIT License. Coded by wenzhixin.</p><p>我的网站 (<a href="http://wenzhixin.net.cn/">wenzhixin.net.cn</a>)</p><p>Github (<a href="https://github.com/wenzhixin">@wenzhixin</a>)</p><p>微博 (<a href="http://weibo.com/2292826740">@<em>文翼</em></a>)</p><p>邮件 (wenzhixin2010@gmail.com)</p></div>
+  </div>
+
+  <script src="./Multiple Select_files/analytics(1).js"></script>
+
+</body></html>

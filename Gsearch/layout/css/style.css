@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*  ===== 基本覆寫 ===== */
+*{font-family:Verdana, Microsoft JhengHei,微軟正黑體, Arial, Helvetica, sans-serif;}
+html,body{height:100%; margin:0; padding:0;}
+body{font-size:14px; margin:0;}
+h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+
+/*  ===== 系統layout ===== */
+.WrapperBody{width:100%;}
+.WrapperBody .WrapperHeader{height:80px;}
+.WrapperFooter{background:#CEEFFF;}
+.WrapperFooter .footerblock{text-align:center; padding:10px 0;}
+
+/* logo 位置 */
+#logowrapper{ margin:0 auto; width:350px;}
+#lens{position:absolute; margin-left:20px; margin-top:4px;}
+#doc{position:absolute; margin-left:30px; margin-top:5px;}
+#word{position:absolute; margin-left:37px; margin-top:16px;}
+#logo{position:absolute; margin-left:72px; margin-top:10px;}
+
+/* 分頁 */
+div.pagination{overflow: hidden;font-size:9pt;padding:10px 0;}
+div.pagination ul {list-style: none;padding: 2px 0;line-height: 16px;}
+div.pagination li {display:inline;}
+div.pagination.sabrosus {
+	padding:3px;
+	margin:3px;
+	text-align:center;
+}
+
+div.pagination.sabrosus a {
+	padding: 2px 5px 2px 5px;
+	margin-right: 2px;
+	border: 1px solid #C5C5C5;
+	text-decoration: none;
+	color: #000;
+}
+
+div.pagination.sabrosus a:hover, div.pagination.pagination a:active {
+	border: 1px solid #C5C5C5;
+	color: #FFF;
+	background-color:#44C2FF;
+}
+
+div.pagination.sabrosus li.current {
+	padding: 2px 5px 2px 5px;
+	margin-right: 2px;
+	border: 1px solid #C5C5C5;
+	font-weight: bold;
+	background-color: #44C2FF;
+	color: #FFF;
+}
+
+div.pagination.sabrosus li.disabled {
+	padding: 2px 5px 2px 5px;
+	margin-right: 2px;
+	border: 1px solid #E4E4E4;
+	color: #E4E4E4;
+}
+
+/* colorbox */
+#colorbox #cboxClose { top: 5px;  right: 0;background:url('../images/colorboxStyle/colorboxcancel.png') no-repeat;z-index:10;}
+#cboxTitle{position:absolute; top:0px; left:0; text-align:left; padding-top:5px; padding-left:5px; width:100%;height:30px; color:#FFF;font-weight:bold;background:url('../images/colorboxStyle/colorboxbarbgBlue.gif') repeat-x top #2d70a4;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;}
+/* 色系修改AOI
+#cboxTitle{background:url('../images/colorboxStyle/colorboxbarbgAOI.gif') repeat-x top #2d9da4;}
+   色系修改wood
+#cboxTitle{background:url('../images/colorboxStyle/colorboxbarbgwood.gif') repeat-x top #a4612d;}
+*/
+.colorboxnewborder{
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+}
